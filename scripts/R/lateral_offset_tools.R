@@ -1,4 +1,6 @@
-# functions for computing lateral shift
+# FUNCTIONS FOR COMPUTING LATERAL SHIFT
+
+# load required packages
 library(EBImage)
 library(RBioFormats)
 library(stringr)
