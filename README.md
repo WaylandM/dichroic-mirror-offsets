@@ -1,2 +1,2 @@
 # dichroic-mirror-offsets
-Tools for measuring and correcting dichroic mirror offsets on Olympus FV3000
+Tools for measuring and correcting dichroic mirror offsets on the Olympus FV3000
