@@ -19,9 +19,16 @@ When you restart ImageJ/Fiji you should see **Olympus DM correction** on the plu
 ### Example image sequence
 ![misaligned channels](img/misaligned_channels.png)
 
+### 1. Launch plugin
+**Plugins -> Zoology Imaging Facility -> Olympus DM correction**
+
+**N.B. The Olympus oir file doesn't need to be open when you start the plugin. If you have large image files to process it is best not to have any images open in ImageJ/Fiji, to maximize the memory available to the plugin.**
 
 ### 2. Choose Olympus oir file 
+You will be prompted to select the Olympus oir file to be processed.
 ![choose olympus image file dialog](img/choose_olympus_oir_file.png)
+
+*N.B. The plugin will not make any changes to the Olympus oir file. The aligned image channels will be output as new tif files.*
 
 ![choose output folder dialog](img/choose_output_folder.png)
 
