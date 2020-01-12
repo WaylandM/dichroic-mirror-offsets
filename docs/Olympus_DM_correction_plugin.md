@@ -1,4 +1,4 @@
-# Olympus DM correction ImageJ/Fiji plugin
+# Olympus DM correction ImageJ plugin
 
 **N.B. This plugin requires the BioFormats plugins (https://imagej.net/Bio-Formats)**
 
