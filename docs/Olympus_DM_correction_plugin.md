@@ -57,6 +57,7 @@ Inside the subdirectory you will find several tif files, one for each of the cha
 ![new image files created](img/files_created.png)
 
 Open and merge channel images in ImageJ/Fiji.
+
 ![aligned_channels](img/aligned_channels.png)
 
 ## Test data
