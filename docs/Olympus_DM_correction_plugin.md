@@ -18,4 +18,14 @@ When you restart ImageJ/Fiji you should see **Olympus DM correction** on the plu
 
 ![misaligned channels](img/misaligned_channels.png)
 
-![choose olympus image file](img/choose_olympus_oir_file.png)
+![choose olympus image file dialog](img/choose_olympus_oir_file.png)
+
+![choose output folder dialog](img/choose_output_folder.png)
+
+![match channel to DM dialog](img/match_channel_to_DM.png)
+
+![output folder](img/output_folder.png)
+
+![new image files created](img/files_created.png)
+
+![log](img/log.png)
