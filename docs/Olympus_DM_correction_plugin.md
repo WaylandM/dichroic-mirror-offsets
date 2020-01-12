@@ -31,3 +31,6 @@ When you restart ImageJ/Fiji you should see **Olympus DM correction** on the plu
 ![log](img/log.png)
 
 **File -> Save As...**
+
+
+## Test data
