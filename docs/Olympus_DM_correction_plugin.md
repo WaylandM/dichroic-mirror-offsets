@@ -35,24 +35,28 @@ Next you will be prompted to choose the directory into which the aligned channel
 ![choose output folder dialog](img/choose_output_folder.png)
 
 ### 4. Match image channels to DMs
-The plugin uses [BioFormats](https://www.openmicroscopy.org/bio-formats/) to extract almost all of the metadata (*e.g.* objective lens, pixel size, rotation of field of view, rotation of region of interest) it needs to process the image file. However, as far as I can tell, BioFormats doesn't report which DM was used to acquire each channel. This means we have to manually match each channel to its DM.
+The plugin uses [BioFormats](https://www.openmicroscopy.org/bio-formats/) to extract almost all of the metadata (*e.g.* objective lens, pixel size, rotation of field of view, rotation of region of interest) it needs to process the image file. However, as far as I can tell, BioFormats doesn't report which DM was used to acquire each channel. This means we have to manually match each channel to its DM. Channels are numbered from 1 following the Olympus convention.
 ![match channel to DM dialog](img/match_channel_to_DM.png)
 
-**N.B. Channels are numbered from 1 following the Olympus convention.**
+When you have matched each channel to its DM, click **OK**. 
 
-When you have matched each channel to its DM, click OK
+**N.B. The plugin does not display images at any stage of processing.**
 
-### 5. Inspect output
+### 5. Log
+Progress is reported in the ImageJ/Fiji log.
+
+![log](img/log.png)
+
+The log reports the version of the plugin used along with details of the translation applied to each channel. You may wish to keep the log for your records. Select the log window, then from the ImageJ/Fiji **File** menu choose **Save As...***.
+
+### 6. Inspect output
 
 
 ![output folder](img/output_folder.png)
 
 ![new image files created](img/files_created.png)
 
-![log](img/log.png)
-
-**File -> Save As...**
-
+![aligned_channels](img/aligned_channels.png)
 
 ## Test data
 Image data used to test this plugin is available on figshare:
