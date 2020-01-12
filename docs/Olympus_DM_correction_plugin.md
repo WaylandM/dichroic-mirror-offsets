@@ -60,7 +60,7 @@ Go to the directory you selected for output. Within this directory you will find
 Inside the subdirectory you will find several tif files, one for each of the channels in your original Olympus oir file.
 ![new image files created](img/files_created.png)
 
-Open and merge channel images in ImageJ/Fiji. All chanels should be correctly aligned.
+Open and merge channel images in ImageJ/Fiji. All channels should be correctly aligned.
 
 ![aligned_channels](img/aligned_channels.png)
 
