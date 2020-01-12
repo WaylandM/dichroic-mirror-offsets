@@ -18,7 +18,7 @@ All images used to measure DM offsets are available on figshare.
 The image acquired using DM1 was treated as the reference. Lateral offsets of the images acquired using other mirrors are relative to DM1. Lateral offset was computed using the template matching method:
 
 1. The image from DM1 is used as the reference.
-2. The image whose offset is to be measured, is cropped to create a template.
+2. The image whose offset is to be measured is cropped to create a template.
 3. The template is slid over the reference image and its similarity to the patch of the reference image it covers is quantified using the sum of absolute differences (SAD) (https://en.wikipedia.org/wiki/Sum_of_absolute_differences).
 4. Once the region of the reference image that is the best match to the template has been identified, the offset in pixels can easily be calculated.
 5. Offset is converted from pixels to micrometres using pixel size information provided in Olympus oir file metadata.
