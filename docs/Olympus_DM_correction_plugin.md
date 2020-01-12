@@ -69,5 +69,5 @@ Image data used to test this plugin are available on figshare:
 
 | Date | DOI |
 |---|---|
-| 2019-07-25 | ? |
-| 2020-01-02 | ? |
+| 2019-07-25 | https://doi.org/10.6084/m9.figshare.11586930.v1 |
+| 2020-01-02 | https://doi.org/10.6084/m9.figshare.11586984.v1 |
