@@ -8,7 +8,7 @@ sequential scan configurations were used: (i) DMs 1, 2 and 3; (ii) DMs
 1, 4 and 5. For further information on imaging parameters, please 
 consult image file metadata.
 
-All images are available on figshare.
+All images used to measure dichroic offsets are available on figshare.
 
 | Date | DOI |
 |---|---|
