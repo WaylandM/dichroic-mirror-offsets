@@ -17,7 +17,10 @@ When you restart ImageJ/Fiji you should see **Olympus DM correction** on the plu
 ## Use
 
 ### Example image sequence
+To demonstrate usage of the plugin we will take the example of the following fluoresent bead image:
 ![misaligned channels](img/misaligned_channels.png)
+
+The image comprises 3 channels (captured with DMs 1-3) and six slices. 
 
 ### 1. Launch plugin
 **Plugins -> Zoology Imaging Facility -> Olympus DM correction**
