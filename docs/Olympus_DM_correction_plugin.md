@@ -40,6 +40,11 @@ The plugin uses [BioFormats](https://www.openmicroscopy.org/bio-formats/) to ext
 
 **N.B. Channels are numbered from 1 following the Olympus convention.**
 
+When you have matched each channel to its DM, click OK
+
+### 5. Inspect output
+
+
 ![output folder](img/output_folder.png)
 
 ![new image files created](img/files_created.png)
