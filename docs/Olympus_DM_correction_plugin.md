@@ -12,7 +12,7 @@
 3. Unzip zoo_img_fac_plugins.zip to the plugins directory of ImageJ/Fiji.
 
 When you restart ImageJ/Fiji you should see **Olympus DM correction** on the plugins menu under **Zoology Imaging Facility**:
-[screenshot of plugins menu](img/plugin_menu_item.png)
+![screenshot of plugins menu](img/plugin_menu_item.png)
 
 ## Use
 
