@@ -64,7 +64,7 @@ Open and merge channel images in ImageJ/Fiji. All chanels should be correctly al
 ![aligned_channels](img/aligned_channels.png)
 
 ## Test data
-Image data used to test this plugin is available on figshare:
+Image data used to test this plugin are available on figshare:
 
 | Date | DOI |
 |---|---|
