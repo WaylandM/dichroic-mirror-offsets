@@ -1,14 +1,17 @@
-# Measurement of dichroic mirror offsets
+# Measurement of dichroic mirror (DM) offsets
 
 ## Image acquisition
 
 Images of fluorescent microspheres (beads) were acquired using 
-sequential scans using the 405nm laser and each objective in turn. Two 
-sequential scan configurations were used: (i) DMs 1, 2 and 3; (ii) DMs 
-1, 4 and 5. For further information on imaging parameters, please 
-consult image file metadata.
+sequential scans using the 405nm laser and each objective in turn. 
+Two sequential scan configurations were used: (i) DMs 1, 2 and 3; 
+(ii) DMs 1, 4 and 5. Images were saved in Olympus oir format (one 
+file per sequential scan). For further information on imaging 
+parameters, please consult image file metadata.
 
-All images used to measure dichroic offsets are available on figshare.
+This is a very long line This is a very long line This is a very long line This is a very long line This is a very long line This is a very long line This is a very long line
+
+All images used to measure DM offsets are available on figshare.
 
 | Date | DOI |
 |---|---|
@@ -19,4 +22,4 @@ All images used to measure dichroic offsets are available on figshare.
 
 ## Offset calculation
 
-
+The image acquired using DM1 was used as a 
