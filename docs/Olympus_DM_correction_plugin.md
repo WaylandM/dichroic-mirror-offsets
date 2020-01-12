@@ -39,6 +39,7 @@ Next you will be prompted to choose the directory into which the aligned channel
 
 ### 4. Match image channels to DMs
 The plugin uses [BioFormats](https://www.openmicroscopy.org/bio-formats/) to extract almost all of the metadata (*e.g.* objective lens, pixel size, rotation of field of view, rotation of region of interest) it needs to process the image file. However, as far as I can tell, BioFormats doesn't report which DM was used to acquire each channel. This means we have to manually match each channel to its DM. Channels are numbered from 1 following the Olympus convention.
+
 ![match channel to DM dialog](img/match_channel_to_DM.png)
 
 When you have matched each channel to its DM, click **OK**. 
