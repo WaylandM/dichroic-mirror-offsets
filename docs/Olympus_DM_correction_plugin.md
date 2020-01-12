@@ -2,7 +2,7 @@
 
 **N.B. This plugin requires the BioFormats plugins (https://imagej.net/Bio-Formats)**
 
-[Fiji](https://imagej.net/Fiji) comes with the BioFormats plugins pre-installed. If you are using regular ImageJ you will need to install the BioFormats plugins (see https://docs.openmicroscopy.org/bio-formats/5.8.2/users/imagej/installing.html).
+[Fiji](https://imagej.net/Fiji) comes with the BioFormats plugins pre-installed. If you are using regular [ImageJ](https://imagej.net) you will need to install the BioFormats plugins (see https://docs.openmicroscopy.org/bio-formats/5.8.2/users/imagej/installing.html).
 
 **I recommend using Fiji rather than ImageJ, because it comes with BioFormats pre-installed**
 
