@@ -17,7 +17,7 @@ When you restart ImageJ/Fiji you should see **Olympus DM correction** on the plu
 ## Use
 
 ### Example image sequence
-To demonstrate usage of the plugin we will take the example of the following fluoresent bead image:
+To demonstrate use of the plugin we will take the example of the following fluoresent bead image:
 ![misaligned channels](img/misaligned_channels.png)
 
 The image comprises 3 channels (captured with DMs 1-3) and six slices. The field of view was rotated through 90 degrees. Furthermore, a region of interest within the field of view was rotated through a further 90 degrees. The plugin uses a [rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix) to adjust the offsets for rotated images.
