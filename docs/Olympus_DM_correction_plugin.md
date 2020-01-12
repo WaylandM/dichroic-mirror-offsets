@@ -50,12 +50,13 @@ Progress is reported in the ImageJ/Fiji log.
 The log reports the version of the plugin used along with details of the translation applied to each channel. You may wish to keep the log for your records. Select the log window, then from the ImageJ/Fiji **File** menu choose **Save As...***.
 
 ### 6. Inspect output
-
-
+Go to the directory you selected for output. Within this directory you will find a subdirectory with the same name as your Olympus oir file, but with the *.oir* extension removed:
 ![output folder](img/output_folder.png)
 
+Inside the subdirectory you will find several tif files, one for each of the channels in your original Olympus oir file.
 ![new image files created](img/files_created.png)
 
+Open and merge channel images in ImageJ/Fiji.
 ![aligned_channels](img/aligned_channels.png)
 
 ## Test data
