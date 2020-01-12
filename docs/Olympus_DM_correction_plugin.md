@@ -34,3 +34,8 @@ When you restart ImageJ/Fiji you should see **Olympus DM correction** on the plu
 
 
 ## Test data
+Image data used to test this plugin is available on figshare:
+
+| Date | DOI |
+| 2019-07-25 | ? |
+| 2020-01-02 | ? |
