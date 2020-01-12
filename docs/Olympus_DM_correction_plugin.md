@@ -7,7 +7,7 @@
 ## Installation
 1. Download zip file: [zoo_img_fac_plugins.zip](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/fiji_plugins/zoo_img_fac_plugins.zip?raw=true)
 
-2. Unzip zoo_img_fac_plugins.zip to the plugins directory ImageJ/Fiji.
+2. Unzip zoo_img_fac_plugins.zip to the plugins directory of ImageJ/Fiji.
 
 ## Use
 
