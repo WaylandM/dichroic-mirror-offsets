@@ -50,7 +50,7 @@ Progress is reported in the ImageJ/Fiji log.
 
 ![log](img/log.png)
 
-The log reports the version of the plugin used along with details of the translation applied to each channel. You may wish to keep the log for your records. Select the log window, then from the ImageJ/Fiji **File** menu choose **Save As...***.
+The log reports the version of the plugin used along with details of the translation applied to each channel. To keep the log for your records, select the log window, then from the ImageJ/Fiji **File** menu choose **Save As...***.
 
 ### 6. Inspect output
 Go to the directory you selected for output. Within this directory you will find a subdirectory with the same name as your Olympus oir file, but with the *.oir* extension removed:
