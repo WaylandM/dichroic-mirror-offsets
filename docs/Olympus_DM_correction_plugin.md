@@ -16,8 +16,11 @@ When you restart ImageJ/Fiji you should see **Olympus DM correction** on the plu
 
 ## Use
 
+### Example image sequence
 ![misaligned channels](img/misaligned_channels.png)
 
+
+### 2. Choose Olympus oir file 
 ![choose olympus image file dialog](img/choose_olympus_oir_file.png)
 
 ![choose output folder dialog](img/choose_output_folder.png)
