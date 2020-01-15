@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/231763963.svg)](https://zenodo.org/badge/latestdoi/231763963)
+
 # Olympus FV3000 dichroic mirror offsets
 
 Tools for measuring and correcting dichroic mirror (DM) offsets on the Olympus FV3000.
