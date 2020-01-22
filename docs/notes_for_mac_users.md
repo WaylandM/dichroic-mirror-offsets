@@ -8,6 +8,7 @@ This will display the following dialog box which enables you to add/edit macro c
 
 ![startup macro](img/startup_macro.png)
 
+The following macro command will configure ImageJ to use Java based file dialogs which have titles:
 ```
 setOption("JFileChooser", true);
 ```
