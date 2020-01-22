@@ -27,4 +27,6 @@ Located at the top left of the **LSMScanner** tab is an icon/button for the dich
 
 ### 5 Note DM used in each phase
 
+Click on the dichroic mirror icon/button to reveal a drop-down list of the available dichroic mirrors. The currently selected dichroic mirror will be highlighted. Toggle between the different phases to find out which dichroic mirror has been used for each phase.
+
 ![DM selection](img/DM_selection.png)
