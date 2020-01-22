@@ -5,3 +5,5 @@ On Mac OS X titles are not displayed on file dialogs, such as "open file" and "c
 Go to **Edit -> Options -> Startup...**
 
 This will allow you to edit 
+
+![startup macro](startup_macro.png)
