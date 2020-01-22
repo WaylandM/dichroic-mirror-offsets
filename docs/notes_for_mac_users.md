@@ -8,4 +8,6 @@ This will display the following dialog box which enables you to add/edit macro c
 
 ![startup macro](img/startup_macro.png)
 
-```setOption("JFileChooser", true);
+```
+setOption("JFileChooser", true);
+```
