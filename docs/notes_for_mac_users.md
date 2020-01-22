@@ -6,4 +6,4 @@ Go to **Edit -> Options -> Startup...**
 
 This will allow you to edit 
 
-![startup macro](startup_macro.png)
+![startup macro](img/startup_macro.png)
