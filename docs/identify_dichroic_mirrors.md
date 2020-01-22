@@ -5,11 +5,11 @@ Properties load acquisition parameters.
 
 
 
-## 1 Open image (oir) file
+### 1 Open image (oir) file
 
-## 2 Load acquisition parameters
+### 2 Load acquisition parameters
 
-## 3 Lightpath
+### 3 Inspect lightpath
 
 **Tool Window -> Lightpath**
 
