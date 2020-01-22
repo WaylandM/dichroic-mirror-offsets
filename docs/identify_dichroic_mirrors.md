@@ -20,3 +20,7 @@ Properties load acquisition parameters.
 **Tool Window -> Lightpath**
 
 ![lightpath](img/lightpath.png)
+
+### 5 Note DM used in each phase
+
+![DM selection](img/DM-selection.png)
