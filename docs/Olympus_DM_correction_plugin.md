@@ -46,7 +46,7 @@ The plugin uses [BioFormats](https://www.openmicroscopy.org/bio-formats/) to ext
 
 When you have matched each channel to its DM, click **OK**. 
 
-**N.B. The plugin does not display images at any stage of processing.**
+***N.B. The plugin does not display images at any stage of processing.***
 
 ### 5. Log
 Progress is reported in the ImageJ/Fiji log.
