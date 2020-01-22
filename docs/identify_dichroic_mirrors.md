@@ -5,6 +5,7 @@ Open the image file (oir extension) in the Olympus software.
 
 ### 2 Open sidebar menu
 At the top-left corner of the image window there is an arrow icon. Clicking on this icon will reveal a sidebar menu.
+
 ![open side bar](img/open-side-bar.png)
 
 
