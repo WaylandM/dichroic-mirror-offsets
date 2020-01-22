@@ -13,3 +13,4 @@ Properties load acquisition parameters.
 
 **Tool Window -> Lightpath**
 
+![lightpath](img/lightpath.png)
