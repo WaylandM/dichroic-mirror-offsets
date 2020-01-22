@@ -7,12 +7,15 @@ Properties load acquisition parameters.
 
 ### 1 Open image (oir) file
 
+
+### 2 Open side bar
 ![open side bar](img/open-side-bar.png)
 
-### 2 Load acquisition parameters
+
+### 3 Load acquisition parameters
 ![property tab](img/Property-tab.png)
 
-### 3 Inspect lightpath
+### 4 Inspect lightpath
 
 **Tool Window -> Lightpath**
 
