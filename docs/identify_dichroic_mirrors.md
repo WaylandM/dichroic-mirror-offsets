@@ -23,4 +23,4 @@ Properties load acquisition parameters.
 
 ### 5 Note DM used in each phase
 
-![DM selection](img/DM-selection.png)
+![DM selection](img/DM_selection.png)
