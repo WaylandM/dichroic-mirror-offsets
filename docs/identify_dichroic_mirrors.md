@@ -10,6 +10,7 @@ Properties load acquisition parameters.
 ![open side bar](img/open-side-bar.png)
 
 ### 2 Load acquisition parameters
+![property tab](img/property-tab.png)
 
 ### 3 Inspect lightpath
 
