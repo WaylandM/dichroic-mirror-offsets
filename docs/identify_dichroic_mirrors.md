@@ -7,6 +7,8 @@ Properties load acquisition parameters.
 
 ### 1 Open image (oir) file
 
+![open side bar](img/open-side-bar.png)
+
 ### 2 Load acquisition parameters
 
 ### 3 Inspect lightpath
