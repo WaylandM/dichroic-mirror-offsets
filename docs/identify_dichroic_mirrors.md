@@ -16,6 +16,7 @@ Select the **Property** tab on the sidebar. At the top of the tab is a button wi
 
 ### 4 Inspect lightpath
 Next open the **Lightpath** tool window.
+
 **Tool Window -> Lightpath**
 
 ![lightpath](img/lightpath.png)
