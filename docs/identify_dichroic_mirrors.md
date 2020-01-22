@@ -21,6 +21,8 @@ Next open the **Lightpath** tool window.
 
 ![lightpath](img/lightpath.png)
 
+At the bottom of the **Lightpath** window are two tabs: **Microscope** and **LSMScanner**. Select **LSMScanner**.
+
 ### 5 Note DM used in each phase
 
 ![DM selection](img/DM_selection.png)
