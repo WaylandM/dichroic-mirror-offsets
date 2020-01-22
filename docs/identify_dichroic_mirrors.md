@@ -1,14 +1,10 @@
 # Which dichroic mirrors did I use to acquire my images?
 
-Open image (oir file).
-Properties load acquisition parameters.
+### 1 Open image file
+Open the image file (oir extension) in the Olympus software.
 
-
-
-### 1 Open image (oir) file
-
-
-### 2 Open side bar
+### 2 Open sidebar menu
+At the top-left corner of the image window there is an arrow icon. Clicking on this icon will reveal a sidebar menu.
 ![open side bar](img/open-side-bar.png)
 
 
