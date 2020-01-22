@@ -4,6 +4,8 @@ On Mac OS X titles are not displayed on file dialogs, such as "open file" and "c
 
 Go to **Edit -> Options -> Startup...**
 
-This will allow you to edit 
+This will display the following dialog box which enables you to add/edit macro code to be run on startup.
 
 ![startup macro](img/startup_macro.png)
+
+```setOption("JFileChooser", true);
