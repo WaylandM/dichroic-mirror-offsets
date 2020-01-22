@@ -14,6 +14,8 @@
 When you restart ImageJ/Fiji you should see **Olympus DM correction** on the plugins menu under **Zoology Imaging Facility**:
 ![screenshot of plugins menu](img/plugin_menu_item.png)
 
+***N.B. Mac OS X does not display titles on file dialogs, such as "open file" and "choose directory". To enable this behaviour in ImageJ, see [notes for mac users](notes_for_mac_users.md).***
+
 ## Use
 
 ### Example image sequence
