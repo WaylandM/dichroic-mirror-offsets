@@ -31,4 +31,4 @@ Click on the dichroic mirror icon/button to reveal a drop-down list of the avail
 
 ![DM selection](img/DM_selection.png)
 
-In the screenshot above we can see that for **Phase 2** dichroic mirror **4** (4:DM405/488/494) has been used. 
+In the screenshot above we can see that dichroic mirror **4** (4:DM405/488/494) has been used in **Phase 2**.
