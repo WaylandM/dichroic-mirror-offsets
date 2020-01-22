@@ -3,5 +3,13 @@
 Open image (oir file).
 Properties load acquisition parameters.
 
+
+
+## 1 Open image (oir) file
+
+## 2 Load acquisition parameters
+
+## 3 Lightpath
+
 **Tool Window -> Lightpath**
 
