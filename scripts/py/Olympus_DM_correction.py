@@ -1,5 +1,5 @@
 # Plugin to align images collected using different dichroic mirrors on the Olympus FV3000
-pluginVersion = "0.0.1"
+pluginVersion = "0.0.2"
 
 from ij import IJ 
 from ij.io import OpenDialog 
@@ -14,6 +14,7 @@ from loci.formats import ImageReader
 from loci.formats import MetadataTools
 from loci.plugins.in import ImporterOptions
 from ome.units import UNITS
+from datetime import datetime
 
 dichroicDict = {'DM1':1, 'DM2':2, 'DM3':3, 'DM4':4, 'DM5':5}
 
@@ -90,8 +91,8 @@ def processFile():
 	IJ.log("\n______________________________\n\n\t\tOlympus DM correction\n\t\tVersion " + pluginVersion +"\n______________________________\n")
 
 	# ask user for file
-	od = OpenDialog("Choose a file", None)  
-	filename = od.getFileName()  
+	ofd = OpenDialog("Choose a file", None)  
+	filename = ofd.getFileName()  
   
 	if filename is None:  
   		IJ.log("User canceled the dialog!\nImage processing canceled!\n")
@@ -105,25 +106,8 @@ def processFile():
 		IJ.log("Not an Olympus (.oir) file.\nNo image to process.\n")
 		return
 
-	# ask user for an output directory
-	dc = DirectoryChooser("Choose folder for output")  
-	od = dc.getDirectory()  
-      
-	if od is None:  
-		IJ.log("User canceled the dialog!\nImage processing canceled!\n")  
-		return
-
-	IJ.log("Folder selected for output: " + od)
-
 	filenameExExt = os.path.splitext(filename)[0]
-	od = od + filenameExExt
-                
-	if not os.path.exists(od):
-		os.makedirs(od)
-		IJ.log("Created subfolder: " + od)
-	else:
-		IJ.log("Subfolder " + od +  " already exists")    
-        
+      
 	# parse metadata
 	reader = ImageReader()
 	omeMeta = MetadataTools.createOMEXMLMetadata()
@@ -172,6 +156,7 @@ def processFile():
 	DMs = ["DM1", "DM2", "DM3", "DM4", "DM5"] 
 	for i in range(numChannels):
 		gd.addChoice("Channel " + str(i+1), DMs, DMs[0])
+	gd.addCheckbox("Merge channels", False) 
 	gd.showDialog()
 	if gd.wasCanceled():
 		IJ.log("User canceled the dialog!\nImage processing canceled!\n")
@@ -179,9 +164,32 @@ def processFile():
 	dichroics = []
 	for i in range(numChannels):
 		dichroics.append(gd.getNextChoice())
+	merge = gd.getNextBoolean()
 	IJ.log("User selected dichroic mirrors")
 	for i in range(numChannels):
 		IJ.log("\t\tChannel " + str(i+1) + ": " + dichroics[i])	
+
+	# ask user for an output directory
+	dc = DirectoryChooser("Choose folder for output")  
+	od = dc.getDirectory()    
+	if od is None:  
+		IJ.log("User canceled the dialog!\nImage processing canceled!\n")  
+		return  
+  
+	if merge:
+		tiffDir = od + "." + str(datetime.now()).replace(" ", "") + "/"
+		if not os.path.exists(tiffDir):
+			os.makedirs(tiffDir)
+			IJ.log("Created temporary folder: " + tiffDir)
+		else:
+			IJ.log("Unable to create temporary folder!\n")
+	else:
+		tiffDir = od + filenameExExt + "/"
+		if not os.path.exists(tiffDir):
+			os.makedirs(tiffDir)
+			IJ.log("Created subfolder: " + tiffDir)
+		else:
+			IJ.log("Subfolder " + tiffDir +  " already exists")
 
 	# correct images
 	for i in range(numChannels):
