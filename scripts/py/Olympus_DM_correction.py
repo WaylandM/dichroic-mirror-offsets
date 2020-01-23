@@ -6,6 +6,7 @@ from ij.io import OpenDialog
 from ij.io import DirectoryChooser
 from ij.io import FileSaver
 from ij.gui import GenericDialog  
+from ij.plugin import RGBStackMerge
 import math
 import sys
 import os
@@ -85,6 +86,14 @@ def extractChannel(oirFile, ch):
 	ip = imps[0]
 	return(ip)
 
+def readSingleChannelImg(imgFile):
+	options = ImporterOptions()
+	options.setColorMode(ImporterOptions.COLOR_MODE_GRAYSCALE)
+	options.setId(imgFile)
+	imps = BF.openImagePlus(options)
+	ip = imps[0]
+	return(ip)
+
 # function for processing an Olympus oir file
 def processFile():
 	# start logging
@@ -98,9 +107,9 @@ def processFile():
   		IJ.log("User canceled the dialog!\nImage processing canceled!\n")
   		return
 
-  	directory = od.getDirectory()  
+  	directory = ofd.getDirectory()  
   	filepath = directory + filename  
-  	IJ.log("Selected file path: " + filepath)
+  	IJ.log("File path: " + filepath)
 
 	if not filename.endswith(".oir"):
 		IJ.log("Not an Olympus (.oir) file.\nNo image to process.\n")
@@ -138,7 +147,7 @@ def processFile():
 
 	# log metadata
 	IJ.log("\nMETADATA")
-	IJ.log("Filename: " + filepath)
+	#IJ.log("Filename: " + filepath)
 	IJ.log("Number of series: " + str(seriesCount))
 	IJ.log("Number of channels: " + str(numChannels))
 	IJ.log("Number of frames: " + str(numFrames))
@@ -152,22 +161,46 @@ def processFile():
 	IJ.log("\t\tY = " + str(physSizeY.value()) + " " + physSizeY.unit().getSymbol())
 
 	# ask user to identify dichroic mirror used for each channel  
-	gd = GenericDialog("Dichroic mirrors")
+	gdDM = GenericDialog("Dichroic mirrors")
 	DMs = ["DM1", "DM2", "DM3", "DM4", "DM5"] 
 	for i in range(numChannels):
-		gd.addChoice("Channel " + str(i+1), DMs, DMs[0])
-	gd.addCheckbox("Merge channels", False) 
-	gd.showDialog()
-	if gd.wasCanceled():
+		gdDM.addChoice("Channel " + str(i+1), DMs, DMs[0])
+	gdDM.addCheckbox("Merge channels", False) 
+	gdDM.showDialog()
+	if gdDM.wasCanceled():
 		IJ.log("User canceled the dialog!\nImage processing canceled!\n")
 		return
 	dichroics = []
 	for i in range(numChannels):
-		dichroics.append(gd.getNextChoice())
-	merge = gd.getNextBoolean()
+		dichroics.append(gdDM.getNextChoice())
+	merge = gdDM.getNextBoolean()
 	IJ.log("User selected dichroic mirrors")
 	for i in range(numChannels):
 		IJ.log("\t\tChannel " + str(i+1) + ": " + dichroics[i])	
+
+	if merge:
+		channels = []
+		chDict = {}
+		for i in range(numChannels):
+			chName = "Channel"+str(i+1)
+			channels.append(chName)
+			chDict[chName] = i
+		channels.append("NONE")
+		colourChoices = ["red", "green", "blue", "gray", "cyan", "magenta", "yellow"]
+		gdMerge = GenericDialog("Merge channels")
+		for c in colourChoices:
+			gdMerge.addChoice(c + ":", channels, channels[numChannels])
+		gdMerge.showDialog()
+		if gdMerge.wasCanceled():
+			IJ.log("User canceled the dialog!\nImage processing canceled!\n")
+			return
+		mergeList = []
+		for i in range(len(colourChoices)):
+			ch = gdMerge.getNextChoice()
+			if ch == "NONE":
+				mergeList.append(None)
+			else:
+				mergeList.append(chDict[ch])
 
 	# ask user for an output directory
 	dc = DirectoryChooser("Choose folder for output")  
@@ -177,21 +210,22 @@ def processFile():
 		return  
   
 	if merge:
-		tiffDir = od + "." + str(datetime.now()).replace(" ", "") + "/"
-		if not os.path.exists(tiffDir):
-			os.makedirs(tiffDir)
-			IJ.log("Created temporary folder: " + tiffDir)
+		tifDir = od + "." + str(datetime.now()).replace(" ", "") + "/"
+		if not os.path.exists(tifDir):
+			os.makedirs(tifDir)
+			IJ.log("Created temporary folder: " + tifDir)
 		else:
 			IJ.log("Unable to create temporary folder!\n")
 	else:
-		tiffDir = od + filenameExExt + "/"
-		if not os.path.exists(tiffDir):
-			os.makedirs(tiffDir)
-			IJ.log("Created subfolder: " + tiffDir)
+		tifDir = od + filenameExExt + "/"
+		if not os.path.exists(tifDir):
+			os.makedirs(tifDir)
+			IJ.log("Created subfolder: " + tifDir)
 		else:
-			IJ.log("Subfolder " + tiffDir +  " already exists")
+			IJ.log("Subfolder " + tifDir +  " already exists")
 
 	# correct images
+	tifFilePaths = []
 	for i in range(numChannels):
 		ip = extractChannel(oirFile=filepath, ch=i)
 		if dichroics[i] == "DM1":
@@ -215,7 +249,8 @@ def processFile():
 			IJ.log("\t\t\t\ty = " + str(yop))
 			IJ.run(ip, "Translate...", "x=" + str(-xop) + " y=" + str(-yop) + " interpolation=None stack")
 
-		tifFilePath = od + "/" + filenameExExt + "_ch_"+str(i+1)+".tif"
+		tifFilePath = tifDir + filenameExExt + "_ch_"+str(i+1)+".tif"
+		tifFilePaths.append(tifFilePath)
 		if os.path.exists(tifFilePath):
 			IJ.log("\nOutput file exists: " + tifFilePath)
 			IJ.log("Rerun plugin choosing a different output folder")
@@ -223,7 +258,21 @@ def processFile():
 			IJ.log("Image processing terminated!\n")
 			return
 		FileSaver(ip).saveAsTiff(tifFilePath)
+
+	if merge:
+		for i in range(len(mergeList)):
+			if mergeList[i] != None:
+				mergeList[i] = readSingleChannelImg(tifFilePaths[mergeList[i]])
+		merged = RGBStackMerge.mergeChannels(mergeList, False)
+		FileSaver(merged).saveAsTiff(od + filenameExExt + ".tif")
+		for tf in tifFilePaths:
+			os.remove(tf)
+		os.rmdir(tifDir)
 			
 	IJ.log("\nFinished processing file:\n" + filepath + "\n")
-	IJ.log("Aligned images (one tiff file for each channel) can be found in:\n" + od + "\n")
+	if merge:
+		IJ.log("Image file with channels aligned:\n" + od + filenameExExt + ".tif\n")
+	else:
+		IJ.log("Aligned images (one tiff file for each channel) can be found in:\n" + od + "\n")
+
 processFile()
