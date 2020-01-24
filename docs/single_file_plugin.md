@@ -1,6 +1,6 @@
 # Olympus DM correction 
 
-## Use
+## Purpose
 This ImageJ plugin corrects the alignment of channels in indvidual Olympus oir image files. For batch processing see [Olympus DM correction batch](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/batch_plugin.md).
 
 ## Example image sequence
