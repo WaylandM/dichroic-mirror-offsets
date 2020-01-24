@@ -1,4 +1,4 @@
-# *Olympus DM correction* ImageJ plugin
+# **Olympus DM correction** ImageJ plugin
 
 ## Use
 
