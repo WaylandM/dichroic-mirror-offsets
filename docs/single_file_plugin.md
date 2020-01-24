@@ -54,8 +54,13 @@ The log reports the version of the plugin used along with details of the transla
 ## 6. Inspect output
 Go to the directory you selected for output. 
 ### Composite images
-If you chose the **Merge channels** option a composite image will be output.
+If you chose the **Merge channels** option a composite image will be output as a single tif file.
+
 ![composite_image_file](img/output_folder_merge.png)
+
+If you open this tif file in ImageJ/Fiji you should find that all channels are correctly aligned.
+
+![aligned_channels](img/aligned_channels.png)
 
 ### File for each channel
 Within this directory you will find a subdirectory with the same name as your Olympus oir file, but with the *.oir* extension removed:
@@ -66,4 +71,4 @@ Inside the subdirectory you will find several tif files, one for each of the cha
 
 Open and merge channel images in ImageJ/Fiji. All channels should be correctly aligned.
 
-![aligned_channels](img/aligned_channels.png)
+
