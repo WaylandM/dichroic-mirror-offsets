@@ -1,5 +1,5 @@
 # Plugin to align images collected using different dichroic mirrors on the Olympus FV3000
-pluginVersion = "0.0.2"
+pluginVersion = "0.0.3"
 
 from ij import IJ 
 from ij.io import OpenDialog 
@@ -152,16 +152,16 @@ def processFile(filename, inDir, outDir, dichroics, mergeList):
 		tifDir = outDir + "." + str(datetime.now()).replace(" ", "") + "/"
 		if not os.path.exists(tifDir):
 			os.makedirs(tifDir)
-			IJ.log("Created temporary folder: " + tifDir)
+			IJ.log("\nCreated temporary folder: " + tifDir + "\n")
 		else:
 			IJ.log("Unable to create temporary folder!\n")
 	else:
 		tifDir = outDir + filenameExExt + "/"
 		if not os.path.exists(tifDir):
 			os.makedirs(tifDir)
-			IJ.log("Created subfolder: " + tifDir)
+			IJ.log("\nCreated subfolder: " + tifDir + "\n")
 		else:
-			IJ.log("Subfolder " + tifDir +  " already exists")
+			IJ.log("\nSubfolder " + tifDir +  " already exists.\n")
 
 	# correct images
 	tifFilePaths = []
@@ -284,6 +284,7 @@ def processDirectory():
 		if gdMerge.wasCanceled():
 			IJ.log("User canceled the dialog!\nImage processing canceled!\n")
 			return
+		IJ.log("User selected channel colours")
 		usersMergeList = []
 		for i in range(len(colourChoices)):
 			ch = gdMerge.getNextChoice()
@@ -291,6 +292,8 @@ def processDirectory():
 				usersMergeList.append(None)
 			else:
 				usersMergeList.append(chDict[ch])
+				IJ.log("\t\t" + colourChoices[i] + ": " + ch)
+		IJ.log("\n\n")
 
 	# ask user for an output directory
 	dc = DirectoryChooser("Choose folder for output")  
