@@ -21,6 +21,8 @@ N.B. If you have large image files to process it is best not to have any images 
 ## 3. Choose directory containing Olympus oir files
 On starting the plugin you will be prompted to select the folder containing the batch of Olympus oir files. The plugin will process all oir files in this directory. Files without the **.oir** extension will be ignored.
 
+![choose input folder](img/batch_choose_input_folder.png)
+
 ## 4. Match image channels to DMs
 
 ## 5. Choose colour for each channel
