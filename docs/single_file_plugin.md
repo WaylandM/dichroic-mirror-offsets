@@ -70,6 +70,7 @@ Inside this subdirectory you will find the tif files.
 ![new image files created](img/files_created.png)
 
 The filename suffix denotes the channel. For example the file with the following name would contain the image for channel 1:
+
 30X_DM123_1um_beads_FOV090_ROI090_***ch_1***.tif
 
 
