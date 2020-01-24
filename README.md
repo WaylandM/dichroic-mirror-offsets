@@ -7,4 +7,4 @@ Tools for measuring and correcting dichroic mirror (DM) offsets on the Olympus F
 ## Documentation
 [Measurement of lateral offsets](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/offset_measurement.md)
 
-[ImageJ plugin for correcting alignment of channels acquired using different DMs](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/Olympus_DM_correction_plugin.md)
+[ImageJ plugin for correcting alignment of channels acquired using different DMs](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/Olympus_DM_correction_plugins.md)
