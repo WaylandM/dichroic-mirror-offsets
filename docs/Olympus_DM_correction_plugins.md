@@ -19,6 +19,8 @@ When you restart ImageJ/Fiji you should see **Olympus DM correction** and **Olym
 ## Use
 Process individual Olympus image files (.oir) using [**Olympus DM correction**](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/single_file_plugin.md).
 
+[Olympus DM correction batch](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/batch_plugin.md) facilitates batch processing of files.
+
 ## Test data
 Image data used to test these plugins are available on figshare:
 
