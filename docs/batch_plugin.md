@@ -62,11 +62,15 @@ To keep the log for your records, select the log window, then from the ImageJ/Fi
 
 
 ## 8. Inspect output
+Go to the directory you selected for output.
 ### Composite images
+If you chose the **Merge channels** option a composite tif file (containing all channels) will be output for each Olympus oir file.
 ![output directory](img/batch_output_directory.png)
 
 ### File for each channel
+If you opted not to merge channels into a composite file you will find one directory for each Olympus oir file.
 ![output directory no merge](img/batch_output_directory_no_merge.png)
 
+Within each of these directories are the tif files for each channel.
 ![output subdirectory no merge](img/batch_output_subdirectory_no_merge.png)
 
