@@ -66,4 +66,7 @@ To keep the log for your records, select the log window, then from the ImageJ/Fi
 ![output directory](img/batch_output_directory.png)
 
 ### File for each channel
+![output directory no merge](img/batch_output_directory_no_merge.png)
+
+![output subdirectory no merge](img/batch_output_subdirectory_no_merge.png)
 
