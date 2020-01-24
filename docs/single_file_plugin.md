@@ -63,7 +63,7 @@ If you open this tif file in ImageJ/Fiji you should find that all channels are c
 ![aligned_channels](img/aligned_channels.png)
 
 ### File for each channel
-Within this directory you will find a subdirectory with the same name as your Olympus oir file, but with the *.oir* extension removed:
+If you opted not to merge channels into a composite image, multiple tif files will be output, one for each of the channels in your original Olympus oir file. Within the directory you selecte for output you will find a subdirectory with the same name as your Olympus oir file, but with the *.oir* extension removed:
 ![output folder](img/output_folder.png)
 
 Inside the subdirectory you will find several tif files, one for each of the channels in your original Olympus oir file.
