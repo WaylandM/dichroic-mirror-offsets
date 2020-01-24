@@ -17,7 +17,7 @@ When you restart ImageJ/Fiji you should see **Olympus DM correction** and **Olym
 ***N.B. Mac OS X does not display titles on file dialogs, such as "open file" and "choose directory". To enable this behaviour in ImageJ, see [notes for mac users](notes_for_mac_users.md).***
 
 ## Use
-Process individual Olympus image files (.oir) using [Olympus DM correction](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/single_file_plugin.md).
+Process individual Olympus image files (.oir) using [**Olympus DM correction**](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/single_file_plugin.md).
 
 ## Test data
 Image data used to test these plugins are available on figshare:
