@@ -36,7 +36,7 @@ If you asked the plugin to output a composite image, by ticking the **Merge chan
 
 Match each of your channels to one of the seven available colours and then click **OK**.
 
-## 3. Choose output directory
+## 5. Choose output directory
 Next you will be prompted to choose the directory into which the aligned channel images should be output.
 ![choose output folder dialog](img/choose_output_folder.png)
 
@@ -44,7 +44,7 @@ Once you have selected an output directory the oir file will be processed.
 
 ***N.B. The plugin does not display images at any stage of processing.***
 
-## 5. Log
+## 6. Log
 Progress is reported in the ImageJ/Fiji log.
 
 ![log](img/log.png)
@@ -52,7 +52,13 @@ Progress is reported in the ImageJ/Fiji log.
 The log reports the version of the plugin used along with details of the translation applied to each channel. To keep the log for your records, select the log window, then from the ImageJ/Fiji **File** menu choose **Save As...***.
 
 ## 6. Inspect output
-Go to the directory you selected for output. Within this directory you will find a subdirectory with the same name as your Olympus oir file, but with the *.oir* extension removed:
+Go to the directory you selected for output. 
+### Composite images
+If you chose the **Merge channels** option a composite image will be output.
+![composite_image_file](img/output_folder_merge.png)
+
+### File for each channel
+Within this directory you will find a subdirectory with the same name as your Olympus oir file, but with the *.oir* extension removed:
 ![output folder](img/output_folder.png)
 
 Inside the subdirectory you will find several tif files, one for each of the channels in your original Olympus oir file.
