@@ -28,7 +28,9 @@ The plugin uses [BioFormats](https://www.openmicroscopy.org/bio-formats/) to ext
 
 ![match channel to DM dialog](img/match_channel_to_DM.png)
 
-If you would like the plugin to output a single tif file containing all channels, tick the **Merge channels** checkbox, otherwise a tif file will be output for each channel.
+The channel and DM pairings specified here will be used in the processing of all images. This is why it is essential that all images in the batch have been acquired using the same combination of DMs.
+
+If you would like composite files to be output (*i.e.* files containing all channels), tick the **Merge channels** checkbox. Otherwise the plugin will output one tif file per channel, for each of the Olympus oir files.
 
 When you have matched each channel to its DM click **OK** to proceed.
 
@@ -43,7 +45,7 @@ Match each of your channels to one of the seven available colours and then click
 Next you will be prompted to choose the directory into which the aligned channel images should be output.
 ![choose output folder dialog](img/choose_output_folder.png)
 
-Once you have selected an output directory the oir file will be processed.
+Once you have selected an output directory, all oir files in the batch will be processed, using the settings defined in the preceding steps.
 
 ***N.B. The plugin does not display images at any stage of processing.***
 
@@ -53,11 +55,15 @@ Progress is reported in the ImageJ/Fiji log.
 
 ![log](img/batch_log.png)
 
-The log reports the version of the plugin used along with details of the translation applied to each channel. To keep the log for your records, select the log window, then from the ImageJ/Fiji **File** menu choose **Save As...***.
+The log reports the version of the plugin and provides a summary of each file processed, including the translation applied to each channel. The log is updated as each oir file is processed and so it is useful for monitoring the progress of long running jobs.
+
+To keep the log for your records, select the log window, then from the ImageJ/Fiji **File** menu choose **Save As...***.
 
 
 
 ## 8. Inspect output
-
+### Composite images
 ![output directory](img/batch_output_directory.png)
+
+### File for each channel
 
