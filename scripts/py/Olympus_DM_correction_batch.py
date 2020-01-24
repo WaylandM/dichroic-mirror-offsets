@@ -95,13 +95,6 @@ def readSingleChannelImg(imgFile):
 	return(ip)
 
 # function for processing an Olympus oir file
-
-# processFile arguments
-# filename
-# output directory
-# merge boolean
-# mergeList
-
 def processFile(filename, inDir, outDir, dichroics, mergeList):
 
 	if mergeList is None:
