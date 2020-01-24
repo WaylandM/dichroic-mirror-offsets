@@ -1,4 +1,4 @@
-# ImageJ plugin  for processing a single file
+# *Olympus DM correction* ImageJ plugin
 
 ## Use
 
