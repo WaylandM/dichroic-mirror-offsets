@@ -4,7 +4,10 @@
 
 
 ## 1. Preparation
+**Please note the following prerequisits for batch processing:
 
+* **All image files in a batch must contain the same number of channels.**
+* **The same combination of dichroic mirrors should have been used to acquire all images in the batch.**
 
 ## 2. Launch plugin
 
