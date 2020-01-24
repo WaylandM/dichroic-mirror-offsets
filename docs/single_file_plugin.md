@@ -32,7 +32,7 @@ When you have matched each channel to its DM click **OK** to proceed.
 ## 4. Choose colour for each channel
 If you asked the plugin to output a composite image, by ticking the **Merge channels** checkbox in the previous dialog, you will be prompted to select a lookup table (LUT) colour for each channel.
 
-![merge_channels](img/merge_channels.png)
+![merge channels](img/merge_channels.png)
 
 Match each of your channels to one of the seven available colours and then click **OK**.
 
@@ -56,7 +56,7 @@ Go to the directory you selected for output.
 ### Composite images
 If you chose the **Merge channels** option a composite image will be output as a single tif file.
 
-![composite_image_file](img/output_folder_merge.png)
+![composite image file](img/output_folder_merge.png)
 
 If you open this tif file in ImageJ/Fiji you should find that all channels are correctly aligned.
 
