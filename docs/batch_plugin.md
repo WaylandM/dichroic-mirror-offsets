@@ -59,3 +59,5 @@ The log reports the version of the plugin used along with details of the transla
 
 ## 8. Inspect output
 
+![output directory](img/batch_output_directory.png)
+
