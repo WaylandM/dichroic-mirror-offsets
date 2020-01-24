@@ -25,9 +25,13 @@ The plugin uses [BioFormats](https://www.openmicroscopy.org/bio-formats/) to ext
 
 ![match channel to DM dialog](img/match_channel_to_DM.png)
 
-If you would like the plugin to output a single tif file containing all changes, tick the
+If you would like the plugin to output a single tif file containing all channels, tick the **Merge channels** checkbox, otherwise a tif file will be output for each channel.
 
-When you have matched each channel to its DM, click **OK**. 
+When you have matched each channel to its DM click **OK** to proceed.
+
+## 4. Choose lookup table colour for each channel
+
+![merge_channels](img/merge_channels.png)
 
 ## 3. Choose output directory
 Next you will be prompted to choose the directory into which the aligned channel images should be output.
