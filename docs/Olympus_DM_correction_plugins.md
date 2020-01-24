@@ -1,6 +1,6 @@
-# ImageJ plugin for Olympus DM correction
+# ImageJ plugins for Olympus DM correction
 
-**N.B. This plugins requires the BioFormats plugins (https://imagej.net/Bio-Formats)**
+**N.B. These plugins require the BioFormats plugins (https://imagej.net/Bio-Formats)**
 
 [Fiji](https://imagej.net/Fiji) comes with the BioFormats plugins pre-installed. If you are using regular [ImageJ](https://imagej.net) you will need to install the BioFormats plugins (see https://docs.openmicroscopy.org/bio-formats/5.8.2/users/imagej/installing.html).
 
@@ -18,7 +18,7 @@ When you restart ImageJ/Fiji you should see **Olympus DM correction** on the plu
 
 
 ## Test data
-Image data used to test this plugin are available on figshare:
+Image data used to test this plugins are available on figshare:
 
 | Date | DOI |
 |---|---|
