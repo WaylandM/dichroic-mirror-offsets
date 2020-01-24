@@ -11,7 +11,7 @@ This ImageJ plugin corrects the alignment of channels in Olympus oir files. It c
 
 The batch of Olympus oir files should be placed in the same directory. There should be no other oir files in this directory.
 
-[input folder](img/batch_input_folder.png)
+![input folder](img/batch_input_folder.png)
 
 ## 2. Launch plugin
 **Plugins -> Zoology Imaging Facility -> Olympus DM correction**
