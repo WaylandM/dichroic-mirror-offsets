@@ -29,9 +29,12 @@ If you would like the plugin to output a single tif file containing all channels
 
 When you have matched each channel to its DM click **OK** to proceed.
 
-## 4. Choose lookup table colour for each channel
+## 4. Choose colour for each channel
+If you asked the plugin to output a composite image, by ticking the **Merge channels** checkbox in the previous dialog, you will be prompted to select a lookup table (LUT) colour for each channel.
 
 ![merge_channels](img/merge_channels.png)
+
+Match each of your channels to one of the seven available colours and then click **OK**.
 
 ## 3. Choose output directory
 Next you will be prompted to choose the directory into which the aligned channel images should be output.
