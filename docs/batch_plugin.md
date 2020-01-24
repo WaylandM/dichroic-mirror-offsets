@@ -1,7 +1,7 @@
 # Olympus DM correction batch
 
 ## Purpose
-
+This ImageJ plugin corrects the alignment of channels in Olympus oir files. It can process batches in which all images were acquired using the same combination of dichroic mirrors.
 
 ## 1. Preparation
 **Please note the following prerequisites for batch processing:**
@@ -10,6 +10,8 @@
 * **The same combination of dichroic mirrors should have been used to acquire all images in the batch.**
 
 The batch of Olympus oir files should be placed in the same directory. There should be no other oir files in this directory.
+
+[input folder](img/batch_input_folder.png)
 
 ## 2. Launch plugin
 **Plugins -> Zoology Imaging Facility -> Olympus DM correction**
