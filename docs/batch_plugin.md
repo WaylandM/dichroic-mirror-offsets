@@ -9,7 +9,7 @@
 * **All image files in a batch must contain the same number of channels.**
 * **The same combination of dichroic mirrors should have been used to acquire all images in the batch.**
 
-All Olympus oir files to be processed as a batch in same directory. All oir files in this directory should belong to the same batch.
+The batch of Olympus oir files should be placed in the same directory. There should be no other oir files in this directory.
 
 ## 2. Launch plugin
 **Plugins -> Zoology Imaging Facility -> Olympus DM correction**
@@ -17,6 +17,7 @@ All Olympus oir files to be processed as a batch in same directory. All oir file
 N.B. If you have large image files to process it is best not to have any images open in ImageJ/Fiji, to maximize the memory available to the plugin.
 
 ## 3. Choose directory containing Olympus oir files
+On starting the plugin you will be prompted to select the folder containing the batch of Olympus oir files. The plugin will process all oir files in this directory. Files without the **.oir** extension will be ignored.
 
 ## 4. Match image channels to DMs
 
