@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/231763963.svg)](https://zenodo.org/badge/latestdoi/231763963)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3634763.svg)](https://doi.org/10.5281/zenodo.3634763)
 
 # Olympus FV3000 dichroic mirror offsets
 
