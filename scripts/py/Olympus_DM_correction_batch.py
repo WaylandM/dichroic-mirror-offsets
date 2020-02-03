@@ -149,7 +149,7 @@ def processFile(filename, inDir, outDir, dichroics, mergeList):
 	IJ.log("\t\tY = " + str(physSizeY.value()) + " " + physSizeY.unit().getSymbol())
   
 	if merge:
-		tifDir = outDir + "." + str(datetime.now()).replace(" ", "") + "/"
+		tifDir = outDir + "." + str(datetime.now()).replace(" ", "").replace(":", "") + "/"
 		if not os.path.exists(tifDir):
 			os.makedirs(tifDir)
 			IJ.log("\nCreated temporary folder: " + tifDir + "\n")

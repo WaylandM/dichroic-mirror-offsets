@@ -212,7 +212,7 @@ def processFile():
 		return  
   
 	if merge:
-		tifDir = od + "." + str(datetime.now()).replace(" ", "") + "/"
+		tifDir = od + "." + str(datetime.now()).replace(" ", "").replace(":", "") + "/"
 		if not os.path.exists(tifDir):
 			os.makedirs(tifDir)
 			IJ.log("\nCreated temporary folder: " + tifDir + "\n")
