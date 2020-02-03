@@ -1,5 +1,5 @@
 # Plugin to align images collected using different dichroic mirrors on the Olympus FV3000
-pluginVersion = "0.0.3"
+pluginVersion = "0.0.4"
 
 from ij import IJ 
 from ij.io import OpenDialog 
