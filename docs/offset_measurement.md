@@ -30,19 +30,23 @@ https://github.com/WaylandM/dichroic-mirror-offsets/tree/master/scripts/R
 Functions implementing SAD, template matching and calculation of offsets are provided by the following R script:
 https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/lateral_offset_tools.R
 
-R script used to process all image files collected to date:
-https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calculate_offsets_20200102.R
-
+R scripts used to process all image files collected to date:
+https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calculate_offsets_pre_30_Oct_2020.R
+https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calculate_offsets_post_30_Oct_2020.R
 
 ## Data
 
 ### Full data set
-All lateral offset measurements collected to date can be found in the following table:
-https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_20200102.csv
+All lateral offset measurements collected to date can be found in the following tables:
+https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_pre_20201030.csv
+https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_post_20201030.csv
 
 ### Offsets used for correcting alignment of channels
-Average offsets for each DM and objective combination can be found in the following table:
-https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTable_20200102.csv
+Average offsets for each DM and objective combination can be found in the following tables:
+https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTable_pre_20201030.csv
+https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTable_post_20201030.csv
 
 These average offsets are used for correcting the alignment of channels collected with different DMs (see [Olympus DM correction ImageJ plugin](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/Olympus_DM_correction_plugin.md)).
+
+**N.B. The lateral offset data changed on 30th October 2020 when the dichroic mirrors were realigned.**
 
