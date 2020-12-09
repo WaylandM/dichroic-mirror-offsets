@@ -27,7 +27,9 @@ The plugin uses [BioFormats](https://www.openmicroscopy.org/bio-formats/) to ext
 
 If you would like the plugin to output a single tif file containing all channels, tick the **Merge channels** checkbox, otherwise a tif file will be output for each channel.
 
-When you have matched each channel to its DM click **OK** to proceed.
+**Lateral offsets changed on 30th October 2020 when the dichroic mirrors were realigned. Please ensure that you specify when your images were acquired by checking the appropriate radio button.**
+
+Click **OK** to proceed.
 
 ## 4. Choose colour for each channel
 If you asked the plugin to output a composite image, by ticking the **Merge channels** checkbox in the previous dialog, you will be prompted to select a lookup table (LUT) colour for each channel.
