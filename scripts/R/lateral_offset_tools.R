@@ -40,8 +40,8 @@ calculateOffsets <- function(img, refImg, offImg, imgCrop){
   pxWidth <- globalMetadata(img)$`- Pixel Length X`
   pxWidth <- str_sub(pxWidth,str_locate(pxWidth,"\\[")[1]+1,str_locate(pxWidth,"\\]")[1]-1)
   pxWidth <- as.numeric(pxWidth)
-  x <- latOff$x - imgCrop
-  y <- latOff$y - imgCrop
+  x <- latOff$x - imgCrop - 1
+  y <- latOff$y - imgCrop - 1
   x <- x * pxWidth
   y <- y * pxWidth
   output <- c(x,y)

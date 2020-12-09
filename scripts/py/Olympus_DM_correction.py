@@ -1,5 +1,5 @@
 # Plugin to align images collected using different dichroic mirrors on the Olympus FV3000
-pluginVersion = "0.0.4"
+pluginVersion = "0.0.5"
 
 from ij import IJ 
 from ij.io import OpenDialog 
@@ -18,54 +18,103 @@ from ome.units import UNITS
 from datetime import datetime
 
 dichroicDict = {'DM1':1, 'DM2':2, 'DM3':3, 'DM4':4, 'DM5':5}
+dateOptions = ["before 30th Oct 2020", "after 30th Oct 2020"] 
 
-# lookup offset
-def getOffset(obj, dm):
+# lookup offset for images collected before 30th October 2020
+def getOffset0(obj, dm):
 	if obj=="UPLFLN 4X":
 		if dm==2:
-			return({'x':2.1086, 'y':14.6492})
+			return({'x':1.3317, 'y':13.8723})
 		if dm==3:
-			return({'x':-2.3306, 'y':7.1026})
+			return({'x':-3.1074, 'y':6.3258})
 		if dm==4:
-			return({'x':-6.2148, 'y':-13.2065})
+			return({'x':-6.9917, 'y':-13.9833})
 		if dm==5:
-			return({'x':-5.438, 'y':-11.6528})
+			return({'x':-6.2148, 'y':-12.4296})
 	if obj=="UPLSAPO 10":
 		if dm==2:
-			return({'x':0.6659, 'y':5.8153})
+			return({'x':0.3551, 'y':5.5045})
 		if dm==3:
-			return({'x':-0.9322, 'y':2.7967})
+			return({'x':-1.243, 'y':2.4859})
 		if dm==4:
-			return({'x':-2.4859, 'y':-5.2826})
+			return({'x':-2.7967, 'y':-5.5933})
 		if dm==5:
-			return({'x':-2.0864, 'y':-4.6611})
+			return({'x':-2.3971, 'y':-4.9718})
 	if obj=="UPLSAPO 20":
 		if dm==2:
-			return({'x':0.3773, 'y':2.9076})
+			return({'x':0.222, 'y':2.7523})
 		if dm==3:
-			return({'x':-0.4661, 'y':1.3983})
+			return({'x':-0.6215, 'y':1.243})
 		if dm==4:
-			return({'x':-1.243, 'y':-2.6413})
+			return({'x':-1.3983, 'y':-2.7967})
 		if dm==5:
-			return({'x':-1.0654, 'y':-2.3306})
+			return({'x':-1.2208, 'y':-2.4859})
 	if obj=="UPLSAPO 30":
 		if dm==2:
-			return({'x':0.2338, 'y':1.8792})
+			return({'x':0.1361, 'y':1.7816})
 		if dm==3:
-			return({'x':-0.3167, 'y':0.9145})
+			return({'x':-0.4143, 'y':0.8168})
 		if dm==4:
-			return({'x':-0.8286, 'y':-1.7786})
+			return({'x':-0.9263, 'y':-1.8763})
 		if dm==5:
-			return({'x':-0.7073, 'y':-1.5596})
+			return({'x':-0.805, 'y':-1.6573})
 	if obj=="UPLSAPO 60":
 		if dm==2:
-			return({'x':0.1381, 'y':0.9667})
+			return({'x':0.0691, 'y':0.8977})
 		if dm==3:
-			return({'x':-0.1381, 'y':0.4735})
+			return({'x':-0.2072, 'y':0.4045})
 		if dm==4:
-			return({'x':-0.4143, 'y':-0.8977})
+			return({'x':-0.4834, 'y':-0.9667})
 		if dm==5:
-			return({'x':-0.3453, 'y':-0.7596})
+			return({'x':-0.4143, 'y':-0.8286})
+
+# lookup offset for images collected after 30th October 2020
+def getOffset1(obj, dm):
+	if obj=="UPLFLN 4X":
+		if dm==2:
+			return({'x':0.6215, 'y':3.7289})
+		if dm==3:
+			return({'x':5.9041, 'y':-5.438})
+		if dm==4:
+			return({'x':-0.3107, 'y':1.5537})
+		if dm==5:
+			return({'x':0.7769, 'y':3.1074})
+	if obj=="UPLSAPO 10":
+		if dm==2:
+			return({'x':0.3729, 'y':1.4916})
+		if dm==3:
+			return({'x':2.5481, 'y':-2.2995})
+		if dm==4:
+			return({'x':0.3107, 'y':0.6215})
+		if dm==5:
+			return({'x':0.6215, 'y':1.243})
+	if obj=="UPLSAPO 20":
+		if dm==2:
+			return({'x':0.0259, 'y':0.6474})
+		if dm==3:
+			return({'x':1.243, 'y':-1.2171})
+		if dm==4:
+			return({'x':0, 'y':0.3107})
+		if dm==5:
+			return({'x':0.1554, 'y':0.6215})
+	if obj=="UPLSAPO 30":
+		if dm==2:
+			return({'x':0.0414, 'y':0.5179})
+		if dm==3:
+			return({'x':0.8286, 'y':-0.7458})
+		if dm==4:
+			return({'x':0, 'y':0.1864})
+		if dm==5:
+			return({'x':0.1036, 'y':0.4143})
+	if obj=="UPLSAPO 60":
+		if dm==2:
+			return({'x':0.0276, 'y':0.2624})
+		if dm==3:
+			return({'x':0.4143, 'y':-0.4005})
+		if dm==4:
+			return({'x':0, 'y':0.0829})
+		if dm==5:
+			return({'x':0.0691, 'y':0.2072})
 
 # rotate offset (https://en.wikipedia.org/wiki/Rotation_matrix)
 def rotateOffset(x,y,angle):
@@ -166,6 +215,7 @@ def processFile():
 	for i in range(numChannels):
 		gdDM.addChoice("Channel " + str(i+1), DMs, DMs[0])
 	gdDM.addCheckbox("Merge channels", False) 
+	gdDM.addRadioButtonGroup("Images collected:", dateOptions, 2, 1, "after 30th Oct 2020")
 	gdDM.showDialog()
 	if gdDM.wasCanceled():
 		IJ.log("User canceled the dialog!\nImage processing canceled!\n")
@@ -174,9 +224,12 @@ def processFile():
 	for i in range(numChannels):
 		dichroics.append(gdDM.getNextChoice())
 	merge = gdDM.getNextBoolean()
+	collectionDate = gdDM.getNextRadioButton()
+	IJ.log("\n\nImages collected " + collectionDate + ".\n")
 	IJ.log("\nUser selected dichroic mirrors")
 	for i in range(numChannels):
 		IJ.log("\t\tChannel " + str(i+1) + ": " + dichroics[i])	
+	IJ.log("\n")
 
 	if merge:
 		channels = []
@@ -233,7 +286,10 @@ def processFile():
 		if dichroics[i] == "DM1":
 			IJ.log("Channel " + str(i+1) + " was imaged using DM1, so no correction required.")
 		else:
-			offsets = getOffset(obj=objLensName,dm=dichroicDict[dichroics[i]])
+			if collectionDate == dateOptions[0]:
+				offsets = getOffset0(obj=objLensName,dm=dichroicDict[dichroics[i]])
+			else:
+				offsets = getOffset1(obj=objLensName,dm=dichroicDict[dichroics[i]])
 			xom = offsets['x']
 			yom = offsets['y']
 			if abs(totalRotation) > 0.1:
