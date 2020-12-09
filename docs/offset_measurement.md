@@ -39,9 +39,8 @@ https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calcul
 ### Full data set
 All lateral offset measurements collected to date can be found in the following tables:
 
-https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_pre_20201030.csv
-
-https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_post_20201030.csv
+* https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_pre_20201030.csv
+* https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_post_20201030.csv
 
 ### Offsets used for correcting alignment of channels
 Average offsets for each DM and objective combination can be found in the following tables:
