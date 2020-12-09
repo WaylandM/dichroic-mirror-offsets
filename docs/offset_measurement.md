@@ -31,8 +31,8 @@ Functions implementing SAD, template matching and calculation of offsets are pro
 https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/lateral_offset_tools.R
 
 R scripts used to process all image files collected to date:
-https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calculate_offsets_pre_30_Oct_2020.R
-https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calculate_offsets_post_30_Oct_2020.R
+* https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calculate_offsets_pre_30_Oct_2020.R
+* https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calculate_offsets_post_30_Oct_2020.R
 
 ## Data
 
