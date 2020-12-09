@@ -11,6 +11,7 @@ All images used to measure DM offsets are available on figshare.
 | 2019-07-29 | https://doi.org/10.6084/m9.figshare.11512338.v1 |
 | 2019-12-16 | https://doi.org/10.6084/m9.figshare.11512431.v1 |
 | 2020-01-02 | https://doi.org/10.6084/m9.figshare.11512452.v1 |
+| 2020-12-01 | https://doi.org/10.6084/m9.figshare.13341098.v2 |
 
 
 ## Lateral offset calculation
