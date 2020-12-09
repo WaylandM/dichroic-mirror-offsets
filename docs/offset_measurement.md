@@ -38,14 +38,13 @@ R scripts used to process all image files collected to date:
 
 ### Full data set
 All lateral offset measurements collected to date can be found in the following tables:
-
 * https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_pre_20201030.csv
 * https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_post_20201030.csv
 
 ### Offsets used for correcting alignment of channels
 Average offsets for each DM and objective combination can be found in the following tables:
-https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTable_pre_20201030.csv
-https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTable_post_20201030.csv
+* https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTable_pre_20201030.csv
+* https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTable_post_20201030.csv
 
 These average offsets are used for correcting the alignment of channels collected with different DMs (see [Olympus DM correction ImageJ plugin](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/Olympus_DM_correction_plugin.md)).
 
