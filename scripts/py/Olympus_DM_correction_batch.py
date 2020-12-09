@@ -70,7 +70,7 @@ def getOffset0(obj, dm):
 
 # lookup offset for images collected after 30th October 2020
 def getOffset1(obj, dm):
-	if obj=="UPLFLN 4X":
+	if obj=="UPLSAPO 4X":
 		if dm==2:
 			return({'x':0.6215, 'y':3.7289})
 		if dm==3:
