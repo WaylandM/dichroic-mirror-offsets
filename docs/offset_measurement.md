@@ -48,5 +48,5 @@ https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTab
 
 These average offsets are used for correcting the alignment of channels collected with different DMs (see [Olympus DM correction ImageJ plugin](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/Olympus_DM_correction_plugin.md)).
 
-**N.B. The lateral offset data changed on 30th October 2020 when the dichroic mirrors were realigned.**
+**N.B. The lateral offsets changed on 30th October 2020 when the dichroic mirrors were realigned.**
 
