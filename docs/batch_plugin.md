@@ -32,7 +32,10 @@ The channel and DM pairings specified here will be used in the processing of all
 
 If you would like composite files to be output (*i.e.* files containing all channels), tick the **Merge channels** checkbox. Otherwise the plugin will output one tif file per channel, for each of the Olympus oir files.
 
-When you have matched each channel to its DM click **OK** to proceed.
+**Lateral offsets changed on 30th October 2020 when the dichroic mirrors were realigned. Please ensure that you specify when your images were acquired by checking the appropriate radio button.**
+
+Click **OK** to proceed.
+
 
 ## 5. Choose colour for each channel
 If you asked the plugin to output a composite image, by ticking the **Merge channels** checkbox in the previous dialog, you will be prompted to select a lookup table (LUT) colour for each channel.
