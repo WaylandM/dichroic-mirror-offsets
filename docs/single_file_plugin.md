@@ -27,9 +27,7 @@ The plugin uses [BioFormats](https://www.openmicroscopy.org/bio-formats/) to ext
 
 If you would like the plugin to output a single tif file containing all channels, tick the **Merge channels** checkbox, otherwise a tif file will be output for each channel.
 
-**Lateral offsets changed on 30th October 2020 when the dichroic mirrors were realigned. Please ensure that you specify when your images were acquired by checking the appropriate radio button.**
-
-**Lateral offsets have been calculated on three occasions: 2nd January 2020, 30th October 2020 and 22nd March 2023.**
+**Lateral offsets have been calculated on three occasions: 2nd January 2020, 30th October 2020 and 22nd March 2023. Please ensure that you use the correct offsets for your images by selecting teh appropriate radio button.**
 
 * For images collected before 30th October 2020, please use the offsets dated 2nd January 2020
 * For images collected during the months following the 30th October 2020, please use the offsets dated 30th October 2020
