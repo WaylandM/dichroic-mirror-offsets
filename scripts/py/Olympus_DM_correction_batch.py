@@ -215,10 +215,10 @@ def processFile(filename, inDir, outDir, dichroics, mergeList, collectionDate):
 	globalMetadata = reader.getGlobalMetadata()
 	seriesMetadata = reader.getSeriesMetadata()
 
-	objLensName = globalMetadata['- Objective Lens name #1']
+	objLensName = globalMetadata['- Objective Lens name']
 
-	areaRotation = float(seriesMetadata['area rotation #1'])
-	acquisitionValueRotation = float(seriesMetadata['acquisitionValue rotation #1'])
+	areaRotation = float(seriesMetadata['area rotation'])
+	acquisitionValueRotation = float(seriesMetadata['acquisitionValue rotation'])
 	if 'regionInfo rotation #1' in seriesMetadata:
 		regionInfoRotation = float(seriesMetadata['regionInfo rotation #1'])
 	else:
