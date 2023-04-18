@@ -118,7 +118,7 @@ def getOffset1(obj, dm):
 
 # lookup offset for images collected around March 2023
 def getOffset2(obj, dm):
-	if obj=="UPLFLN 4X":
+	if obj=="UPLSAPO 4X":
 		if dm==2:
 			return({'x':0.7769, 'y':3.1074})
 		if dm==3:
