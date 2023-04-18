@@ -12,6 +12,7 @@ All images used to measure DM offsets are available on figshare.
 | 2019-12-16 | https://doi.org/10.6084/m9.figshare.11512431.v1 |
 | 2020-01-02 | https://doi.org/10.6084/m9.figshare.11512452.v1 |
 | 2020-12-01 | https://doi.org/10.6084/m9.figshare.13341098.v2 |
+| 2023-03-22 | https://doi.org/10.6084/m9.figshare.22644727    |
 
 
 ## Lateral offset calculation
@@ -33,6 +34,7 @@ https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/latera
 R scripts used to process all image files collected to date:
 * https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calculate_offsets_pre_30_Oct_2020.R
 * https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calculate_offsets_post_30_Oct_2020.R
+* https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/scripts/R/calculate_offsets_March_2023.R
 
 ## Data
 
@@ -40,11 +42,13 @@ R scripts used to process all image files collected to date:
 All lateral offset measurements collected to date can be found in the following tables:
 * https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_pre_20201030.csv
 * https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_post_20201030.csv
+* https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetResults_March_2023.csv
 
 ### Offsets used for correcting alignment of channels
 Average offsets for each DM and objective combination can be found in the following tables:
 * https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTable_pre_20201030.csv
 * https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTable_post_20201030.csv
+* https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/tables/offsetTable_March_2023.csv
 
 These average offsets are used for correcting the alignment of channels collected with different DMs (see [Olympus DM correction ImageJ plugin](https://github.com/WaylandM/dichroic-mirror-offsets/blob/master/docs/Olympus_DM_correction_plugin.md)).
 
