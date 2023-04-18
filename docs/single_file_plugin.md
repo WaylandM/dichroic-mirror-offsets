@@ -29,6 +29,12 @@ If you would like the plugin to output a single tif file containing all channels
 
 **Lateral offsets changed on 30th October 2020 when the dichroic mirrors were realigned. Please ensure that you specify when your images were acquired by checking the appropriate radio button.**
 
+**Lateral offsets have been calculated on three occasions: 2nd January 2020, 30th October 2020 and 22nd March 2023.**
+
+* For images collected before 30th October 2020, please use the offsets dated 2nd January 2020
+* For images collected during the months following the 30th October 2020, please use the offsets dated 30th October 2020
+* For recently acquired images, please used the offsets dated 22nd March 2023
+
 Click **OK** to proceed.
 
 ## 4. Choose colour for each channel
