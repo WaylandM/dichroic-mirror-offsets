@@ -32,7 +32,11 @@ The channel and DM pairings specified here will be used in the processing of all
 
 If you would like composite files to be output (*i.e.* files containing all channels), tick the **Merge channels** checkbox. Otherwise the plugin will output one tif file per channel, for each of the Olympus oir files.
 
-**Lateral offsets changed on 30th October 2020 when the dichroic mirrors were realigned. Please ensure that you specify when your images were acquired by checking the appropriate radio button.**
+**Lateral offsets have been calculated on three occasions: 2nd January 2020, 30th October 2020 and 22nd March 2023. Please ensure that you use the correct offsets for your images by selecting the appropriate radio button.**
+
+* For images collected before 30th October 2020, please use the offsets dated 2nd January 2020
+* For images collected during the months following the 30th October 2020, please use the offsets dated 30th October 2020
+* For recently acquired images, please used the offsets dated 22nd March 2023
 
 Click **OK** to proceed.
 
